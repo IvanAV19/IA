@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Radius (R/Ro) <= 0.036\ngini = 0.833\nsamples = 192\nvalue = [32, 29, 32, 33, 32, 34]\nclass = White Dwarf", fillcolor="#fffefe"] ;
+1 [label="gini = 0.0\nsamples = 34\nvalue = [0, 0, 0, 0, 0, 34]\nclass = White Dwarf", fillcolor="#e5399d"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Absolute magnitude (Mv) <= 8.313\ngini = 0.8\nsamples = 158\nvalue = [32, 29, 32, 33, 32, 0]\nclass = Red Dwarf", fillcolor="#fdfeff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="Radius (R/Ro) <= 11.1\ngini = 0.666\nsamples = 93\nvalue = [0, 29, 32, 0, 32, 0]\nclass = Main Sequence", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 32\nvalue = [0, 0, 32, 0, 0, 0]\nclass = Main Sequence", fillcolor="#39e581"] ;
+3 -> 4 ;
+5 [label="Radius (R/Ro) <= 403.45\ngini = 0.499\nsamples = 61\nvalue = [0, 29, 0, 0, 32, 0]\nclass = Supergiant", fillcolor="#f3ecfd"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 32\nvalue = [0, 0, 0, 0, 32, 0]\nclass = Supergiant", fillcolor="#8139e5"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 29\nvalue = [0, 29, 0, 0, 0, 0]\nclass = Hypergiant", fillcolor="#9de539"] ;
+5 -> 7 ;
+8 [label="Absolute magnitude (Mv) <= 15.515\ngini = 0.5\nsamples = 65\nvalue = [32, 0, 0, 33, 0, 0]\nclass = Red Dwarf", fillcolor="#f9fcfe"] ;
+2 -> 8 ;
+9 [label="gini = 0.0\nsamples = 33\nvalue = [0, 0, 0, 33, 0, 0]\nclass = Red Dwarf", fillcolor="#399de5"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 32\nvalue = [32, 0, 0, 0, 0, 0]\nclass = Brown Dwarf", fillcolor="#e58139"] ;
+8 -> 10 ;
+}
