@@ -12,3 +12,4 @@ Python, TensorFlow, PyTorch, Scikit-Learn
 * `/modelos`: Modelos preentrenados y scripts de entrenamiento.
 * `/notebooks`: Cuadernos de Jupyter con análisis exploratorio y pruebas.
 * `/datasets`: Conjuntos de datos utilizados en los proyectos.
+* 
