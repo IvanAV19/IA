@@ -1,0 +1,28 @@
+name: Local Config
+version: 1.0.0
+schema: v1
+models:
+  - name: ministral ollama (Remoto) 
+    provider: ollama
+    model: ministral-3:14b
+    apiBase: http://192.168.0.30:11434 
+    roles:
+      - chat
+      - edit
+      - apply
+  - name: llama3.1:8b-instruct ollama (Local) 
+    provider: ollama
+    model: llama3.1:8b-instruct-q4_K_M
+    apiBase: http://localhost:11434 
+    roles:
+      - chat
+      - edit
+      - apply
+  - name: Llama groq 8b ollama (Local) 
+    provider: ollama
+    model: llama3-groq-tool-use
+    apiBase: http://localhost:11434 
+    roles:
+      - chat
+      - edit
+      - apply
